@@ -13,27 +13,27 @@ export const iconList: IconList = {
     icon: Menu,
   },
   media: {
-    path: "/media",
+    path: "/#",
     icon: Media,
     label: "Media",
   },
   faq: {
-    path: "/faq",
+    path: "/#",
     icon: FAQ,
     label: "FAQ",
   },
   community: {
-    path: "/community",
+    path: "/#",
     icon: Community,
     label: "Community",
   },
   other: {
-    path: "/stay-connected",
+    path: "/#",
     icon: Other,
     label: "Stay Connected",
   },
   buy_now: {
-    path: "/buy-now",
+    path: "/#",
     icon: Buy,
     label: "Buy Now",
   },
