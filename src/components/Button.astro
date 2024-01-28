@@ -1,0 +1,27 @@
+---
+import type { ButtonTypes } from "../types/types";
+
+type Props = ButtonTypes;
+
+const { url, text, isColored } = Astro.props;
+---
+
+<a
+  href={url}
+  class:list={[
+    "flex mx-6 text-left top-0 text-sm font-normal whitespace-nowrap w-full group",
+    { "text-[#ffd075]": isColored },
+    { "text-[#fff4e2] hover:text-[#ffd075]": !isColored },
+  ]}
+>
+  <div class="px-[1vw] py-[1.25vw] flex justify-center items-center">
+    <slot name="before" />
+    <div class="mr-[0.5vw]"></div>
+    <span
+      class="transition-transform duration-[0.3s] ease-[ease] group-hover:scale-110"
+    >
+      {text}
+    </span>
+    <slot name="after" />
+  </div>
+</a>

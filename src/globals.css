@@ -1,0 +1,105 @@
+.gradient-nav-right {
+  background: linear-gradient(
+    90deg,
+    rgba(23, 47, 73, 0.5),
+    rgba(23, 47, 73, 0.5) 58%,
+    rgba(23, 47, 73, 0)
+  );
+}
+
+.gradient-nav-left {
+  background: linear-gradient(
+    270deg,
+    rgba(23, 47, 73, 0.5),
+    rgba(23, 47, 73, 0.5) 58%,
+    rgba(23, 47, 73, 0)
+  );
+}
+
+.after-gradient::after {
+  content: "";
+  background: linear-gradient(180deg, rgba(23, 30, 29, 0), #171e1d);
+  bottom: 0;
+  content: "";
+  height: 100px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.before-gradient:before {
+  background: linear-gradient(0deg, rgba(23, 30, 29, 0), #171e1d);
+  content: "";
+  height: 100px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.before-trailer:before {
+  content: "";
+  padding-top: 56.25%;
+  display: block;
+}
+
+.rotate-85-cw {
+  transform: rotate(85deg);
+}
+
+.rotate-50-ccw {
+  transform: rotate(-50deg);
+}
+
+.rotate-30-ccw {
+  transform: rotate(-30deg);
+}
+
+.hexagon {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.transition-btn {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.transition-logo {
+  animation: logo-hero 2s ease 1s forwards;
+}
+
+@keyframes logo-hero {
+  0% {
+    scale: 0.8;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes light-pulse {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.8, 0.8, 0.8);
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.nav-rgt-animation {
+  animation: light-pulse 5s ease infinite alternate;
+}
+
+.nav-rgt-2-animation {
+  animation-delay: 3s;
+  animation-duration: 4s;
+}
+
+.drop-shadow-accolades {
+  filter: drop-shadow(0 0 18px black) brightness(1.2);
+}

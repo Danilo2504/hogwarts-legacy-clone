@@ -1,0 +1,23 @@
+---
+const { image, icon } = Astro.props;
+---
+
+<figure class="lg:m-4">
+  <div class="relative flex flex-col justify-center items-center">
+    <img class="relative z-20" src="/assets/game-info-frame-a.webp" />
+    <img class="absolute z-10 hexagon w-[80%]" src={image} />
+    <img class="absolute z-30 top-[6.2%] right-[10.5%] w-[16%]" src={icon} />
+    <img class="absolute z-30 bottom-[6.2%] left-[9.8%] w-[16%]" src={icon} />
+  </div>
+  <div class="px-4 pt-4">
+    <h2
+      slot="title"
+      class="font-normal text-[#fff4e2] text-center text-[1.575rem] lg:h-[80px] mb-2 leading-[1.2]"
+    >
+      <slot name="title" />
+    </h2>
+    <p class="font-normal text-[#fff4e2] text-center text-4 leading-[1.4] mb-4">
+      <slot name="description" />
+    </p>
+  </div>
+</figure>

@@ -1,0 +1,112 @@
+---
+import Header from "./Header.astro";
+---
+
+<div
+  class="after-gradient relative mt-[60px] lg:mt-0 flex justify-center items-center w-full"
+>
+  <video
+    class="h-full w-full aspect-video object-cover hidden lg:block"
+    src="/assets/hero.mp4"
+    autoplay
+    loop></video>
+  <a
+    href="https://www.youtube.com/watch?v=BtyBjOW8sGY"
+    target="_blank"
+    class="absolute w-[140px] h-[140px] lg:hidden flex items-center group z-10"
+  >
+    <img class="absolute h-full w-full" src="/assets/play-button-shadow.png" />
+    <img
+      class="absolute transition-transform duration-[0.6s] ease-[cubic-bezier(.48,0,0.48,1)] group-hover:rotate-[85deg] h-full w-full"
+      src="/assets/play-button-outer.png"
+    />
+    <img
+      class="absolute transition-transform duration-[0.6s] ease-[cubic-bezier(.48,0,0.48,1)] group-hover:rotate-[-50deg] h-full w-full"
+      src="/assets/play-button-inner.png"
+    />
+    <img
+      class="absolute transition-transform duration-[0.6s] ease-[cubic-bezier(.48,0,0.48,1)] group-hover:rotate-[-30deg] h-full w-full"
+      src="/assets/play-button-lip.png"
+    />
+    <img
+      class="absolute group-hover:scale-105 transition-transform duration-[0.4s] ease-[cubic-bezier(.48,0,0.48,1)] w-[54px] ml-2 left-1/2 -translate-x-1/2"
+      src="/assets/play-button-arrow.png"
+    />
+  </a>
+  <video
+    class="h-full w-full object-cover bg-no-repeat lg:hidden"
+    src="/assets/hero-m.mp4"
+    autoplay
+    loop></video>
+  <div class="hidden absolute flex-col items-center z-10 lg:flex">
+    <img
+      class="mt-[20vw] w-[40vw] opacity-0 transition-logo"
+      src="/assets/hero-logo.webp"
+    />
+    <a
+      class="mt-[2.5rem] flex flex-col items-center w-[30vw] border-[0.18vw] border-solid border-[#b69451] rounded-[6.5px] p-4
+      text-center font-light text-[1.425vw] text-[#b69451] leading-[1] group hover:text-white transition-colors duration-[0.2s]
+      bg-cover bg-[url('/assets/available-now-bg.jpg')]"
+      href="https://www.hogwartslegacy.com/en-us/purchase"
+    >
+      <p class="text-nowrap">OUT NOW ON PLAYSTATION, XBOX, & PC</p>
+      <img class="w-[20vw] my-1" src="/assets/rule-a.png" />
+      <p class="text-[2.5vw] font-normal text-[#f1ce89] group-hover:text-white">
+        AVAILABLE NOW
+      </p>
+      <p>ON NINTENDO SWITCH</p>
+    </a>
+  </div>
+  <div
+    class="hidden absolute w-full lg:flex flex-row justify-between pt-6 pl-6 pr-20"
+  >
+    <img
+      class="w-[21vw] drop-shadow-accolades"
+      src="/assets/accolades-left.webp"
+    />
+    <img
+      class="w-[14vw] drop-shadow-accolades"
+      src="/assets/accolades-right.webp"
+    />
+  </div>
+  <div class="absolute w-full flex flex-col top-0 left-0 right-0">
+    <Header />
+    <div class="flex w-full justify-between items-start">
+      <img
+        class="-mt-[10px] w-[25vw] lg:w-[10vw]"
+        src="/assets/corner-left.png"
+      />
+      <img
+        class="w-[320px] lg:hidden flex mt-1 drop-shadow-accolades"
+        src="https://cdn-hogwartslegacy.warnerbrosgames.com/accolades/ign-m.webp?cc=1"
+      />
+      <img
+        class="-mt-[10px] w-[25vw] lg:w-[10vw]"
+        src="/assets/corner-right.png"
+      />
+    </div>
+  </div>
+  <div
+    class="lg:hidden absolute bottom-[-150px] z-10 w-full flex flex-col justify-center items-center"
+  >
+    <a
+      class="flex flex-col items-center max-w-[30rem] w-[90%] border-[0.18vw] border-solid border-[#b69451] rounded-[6.5px] px-3 py-2
+    text-center font-light text-base text-[#b69451] leading-[1] group hover:text-white transition-colors duration-[0.2s]
+    bg-cover bg-[url('/assets/available-now-bg.jpg')]"
+      href="https://www.hogwartslegacy.com/en-us/purchase"
+    >
+      <p class="text-nowrap">OUT NOW ON PLAYSTATION, XBOX, & PC</p>
+      <img class="w-[20rem] my-1" src="/assets/rule-a.png" />
+      <p
+        class="text-[2.35rem] font-normal text-[#f1ce89] group-hover:text-white"
+      >
+        AVAILABLE NOW
+      </p>
+      <p>ON NINTENDO SWITCH</p>
+    </a>
+    <img
+      class="w-[320px]"
+      src="https://cdn-hogwartslegacy.warnerbrosgames.com/accolades/mobile-bottom-game-rant.webp"
+    />
+  </div>
+</div>
