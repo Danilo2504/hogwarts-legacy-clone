@@ -13,3 +13,10 @@ export interface ButtonTypes {
   text: string;
   isColored?: boolean;
 }
+
+export interface CardGameTypes {
+  image: string;
+  icon: string;
+  title: string;
+  description: string;
+}
