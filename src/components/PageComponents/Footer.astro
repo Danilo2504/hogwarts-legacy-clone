@@ -1,6 +1,8 @@
-<footer class="pt-[100px] px-0 bg-black">
+<footer class="pt-[100px] px-0 bg-black relative">
   <div class="flex flex-col">
-    <div class="flex justify-center items-center gap-x-[28px] mb-[30px]">
+    <div
+      class="flex flex-row flex-wrap justify-center items-center gap-[28px] mb-[30px]"
+    >
       <img
         class="h-[54px] w-[71px]"
         src="https://cdn-hogwartslegacy.warnerbrosgames.com/static/wb-games-logo.svg"
@@ -18,7 +20,9 @@
         src="https://cdn-hogwartslegacy.warnerbrosgames.com/static/portkey-games.svg"
       />
     </div>
-    <div class="flex justify-center items-center gap-x-[28px] mb-[30px]">
+    <div
+      class="flex flex-row flex-wrap justify-center items-center gap-[28px] mb-[30px]"
+    >
       <img
         class="h-[16px] w-[80px]"
         src="https://cdn-hogwartslegacy.warnerbrosgames.com/static/ps5_tm.svg"
@@ -48,7 +52,7 @@
       <div
         class="text-center text-[.5rem] text-[#a69e92] mt-[10px] mr-[10px] tracking-[0.05rem] lg:text-left lg:max-w-[28%]"
       >
-        <p class="lg:mx-0 lg:pl-[11px] mx-32 pl-0 mb-4">
+        <p class="lg:mx-0 lg:pl-[11px] px-10 mx-auto mb-4">
           HOGWARTS LEGACY software © 2023 Warner Bros. Entertainment Inc.
           Developed by Avalanche Software. WIZARDING WORLD and HARRY POTTER
           Publishing Rights © J.K. Rowling. PORTKEY GAMES, HOGWARTS LEGACY,
@@ -74,24 +78,22 @@
       </a>
     </div>
   </div>
+  <div class="absolute bottom-0 mb-4 left-1/2 -translate-x-1/2 flex flex-row">
+    <a
+      class="mx-5 opacity-70 text-white text-xs transition-opacity text-nowrap cursor-pointer hover:opacity-100"
+      >Privacy Policy</a
+    >
+    <a
+      class="mx-5 opacity-70 text-white text-xs transition-opacity text-nowrap cursor-pointer hover:opacity-100"
+      >Terms of Use</a
+    >
+    <a
+      class="mx-5 opacity-70 text-white text-xs transition-opacity text-nowrap cursor-pointer hover:opacity-100"
+      >Ad Choices</a
+    >
+  </div>
   <div class="flex justify-between items-end">
     <img class="w-[22vw] lg:w-[10vw]" src="/assets/corner-bottom-left.webp" />
-    <div
-      class="flex justify-between pb-20 lg:pb-5 lg:self-center self-start lg:mt-0 mt-10"
-    >
-      <a
-        class="mx-5 opacity-70 text-white text-xs leading-[.05rem] transition-opacity cursor-pointer hover:opacity-100"
-        >Privacy Policy</a
-      >
-      <a
-        class="mx-5 opacity-70 text-white text-xs leading-[.05rem] transition-opacity cursor-pointer hover:opacity-100"
-        >Terms of Use</a
-      >
-      <a
-        class="mx-5 opacity-70 text-white text-xs leading-[.05rem] transition-opacity cursor-pointer hover:opacity-100"
-        >Ad Choices</a
-      >
-    </div>
     <img class="w-[22vw] lg:w-[10vw]" src="/assets/corner-bottom-right.webp" />
   </div>
 </footer>
